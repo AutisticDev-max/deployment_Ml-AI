@@ -50,3 +50,4 @@ if submit_button:
         percent = prob * 100
         st.write(f"**{name}**: {percent:.2f}%")
         st.progress(prob)
+
