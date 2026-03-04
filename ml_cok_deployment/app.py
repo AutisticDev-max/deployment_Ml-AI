@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd 
 import joblib 
 
-model = joblib.load("rfiris.pkl")
+model = joblib.load("ml_cok_deployment/rfiris.pkl")
 
 st.title("IRIFLOWER")
 
-model = joblib.load("rfiris.pkl")
+model = joblib.load("ml_cok_deployment/rfiris.pkl")
 
 st.write("IRIS FLOWER CLASSIFICATION APPLICATION")
 
@@ -66,4 +66,5 @@ if submit_button:
     st.subheader ("Prediction Result")
 
     st.success(f"Predicted species: {prediction[0]}")
+
 
