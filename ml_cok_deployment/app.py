@@ -4,7 +4,7 @@ import joblib
 
 model = joblib.load("rfiris.pkl")
 
-st.title(IRIFLOWER )
+st.title("IRIFLOWER")
 
 model = joblib.load("rfiris.pkl")
 
@@ -66,3 +66,4 @@ if submit_button:
     st.subheader ("Prediction Result")
 
     st.success(f"Predicted species: {prediction[0]}")
+
